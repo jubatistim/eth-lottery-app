@@ -16,8 +16,6 @@ function App() {
     setManager(_manager);
 
     const _players = await lottery.methods.getPlayers().call();
-    console.log('AHHHHHHHHH');
-    console.log(_players.length.toString());
     setPlayers(_players);
   };
 
