@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   const contractManager = async () => {
-    const _manager = await lottery.methods.manager.call();
+    const _manager = await lottery.methods.manager().call();
     console.log(_manager);
     setManager(_manager);
   };
